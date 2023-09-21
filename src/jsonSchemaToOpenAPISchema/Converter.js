@@ -5,7 +5,7 @@ const {v4: uuid} = require('uuid')
 
 class Convertor {
     constructor(schema = {}) {
-        // this.schema = JSON.parse(JSON.stringify(schema))
+        this.schema = JSON.parse(JSON.stringify(schema))
 
         this.camelCasedProperties = [
             'allOf',
