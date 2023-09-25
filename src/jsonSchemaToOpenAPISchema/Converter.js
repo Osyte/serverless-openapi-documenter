@@ -2,6 +2,7 @@
 
 const traverse = require('json-schema-traverse')
 const {v4: uuid} = require('uuid')
+require("json-circular-stringify");
 
 class Convertor {
     constructor(schema = {}) {
